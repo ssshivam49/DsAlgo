@@ -27,12 +27,11 @@ Node findLCA(Node root, int a, int b){
         }
         
         int left = dist(root.left, key);
-        int right = dist(root.right, key);
-        
         if(left != 0){
             return 1+left;
         }
-        
+      
+        int right = dist(root.right, key);
         if(right != 0){
             return 1+right;
         }
